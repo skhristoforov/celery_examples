@@ -6,3 +6,5 @@ result_serializer = 'json'
 accept_content = ['json']
 timezone = 'Europe/Oslo'
 enable_utc = True
+
+include=['MID_tasks', 'TSM_tasks']
