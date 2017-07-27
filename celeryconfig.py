@@ -20,16 +20,16 @@ task_queues = [
 #  DEFINING ROUTES FOR DIFFERENT KINDS OF TASKS
 task_routes = {
     'MID_tasks.hello_MID_lowprior': {
-        'queue': 'Queue.MID',
+        'queue': 'MID.LOW',
         'routing_key': 'priority.low'
     },
     'MID_tasks.hello_MID_hiprior': {
-        'queue': 'Queue.MID',
+        'queue': 'MID.HI',
         'routing_key': 'priority.hi'
     },
 
     'TSM_tasks.*': {
-        'queue': 'Queue.TSM',
+        'queue': 'TSM.LOW',
         'routing_key': 'priority.low'
     }
 }
