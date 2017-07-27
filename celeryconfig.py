@@ -12,9 +12,9 @@ enable_utc = True
 include = ['MID_tasks', 'TSM_tasks']
 #  CREATING QUEUES
 task_queues = [
-    Queue('MID.HI',  routing_key='priority.#'),
+    Queue('MID.HI',  routing_key='priority.hi'),
     Queue('MID.LOW', routing_key='priority.low'),
-    Queue('TSM.HI',  routing_key='priority.#'),
+    Queue('TSM.HI',  routing_key='priority.hi'),
     Queue('TSM.LOW', routing_key='priority.low'),
 ]
 #  DEFINING ROUTES FOR DIFFERENT KINDS OF TASKS
