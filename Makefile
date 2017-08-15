@@ -1,4 +1,5 @@
 queue:
+	screen -d -S rmq rabbitmq-server start
 	rabbitmqctl add_user myuser mypassword
 	rabbitmqctl add_vhost myvhost
 	rabbitmqctl set_user_tags myuser mytag
